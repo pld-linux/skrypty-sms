@@ -2,8 +2,8 @@ Summary:	A set of scripts to send SMSes
 Summary(pl):	Zestaw skryptów do wysy³ania SMSów
 Name:		skrypty-sms
 Version:	1.62
-Release:	1
-License:	Non-commercial
+Release:	2
+License:	non-commercial
 Group:		Networking/Utilities
 Source0:	http://sms.jfiok.org/pub/%{name}.tar.gz
 URL:		http://sms.jfiok.org/
@@ -79,8 +79,7 @@ Summary:	A MIME decoder & Polish character remover for skrypty-sms
 Summary(pl):	Dekoder MIME i usuwaczka polskich znaków dla skrypty-sms
 Requires:	%{name} = %{version}
 Requires:	metamail
-Group:		Network/Utilities
-######		Unknown group!
+Group:		Networking/Utilities
 
 %description nopl
 The "nopl" script decodes fragments of mail headers encoded in
@@ -109,15 +108,12 @@ install check-for-update.sh $RPM_BUILD_ROOT%{_bindir}/skrypty-sms-check-for-upda
 install sms-dialog nc bramka-{mail,www} powiadom $RPM_BUILD_ROOT%{_bindir}
 install smsrc $RPM_BUILD_ROOT%{_sysconfdir}
 
-gzip -9nf README* CHANGELOG
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
-%doc *.html
+%doc README* CHANGELOG *.html
 %config %{_sysconfdir}/*
 %attr(755,root,root) %{_bindir}/skrypty*
 %attr(755,root,root) %{_bindir}/bramka-mail
