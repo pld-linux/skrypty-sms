@@ -5,21 +5,6 @@ Version:	1.62
 Release:	1
 License:	Non-commercial
 Group:		Networking/Utilities
-Group(cs):	Sí»ové/Utility
-Group(da):	Netværks/Værktøj
-Group(de):	Netzwerkwesen/Dienstprogramme
-Group(es):	Red/Utilitarios
-Group(fr):	Réseau/Utilitaires
-Group(is):	Net/Tól
-Group(it):	Rete/Utility
-Group(no):	Nettverks/Verktøy
-Group(pl):	Sieciowe/Narzêdzia
-Group(pt_BR):	Rede/Utilitários
-Group(pt):	Rede/Utilidades
-Group(ru):	óÅÔØ/õÔÉÌÉÔÙ
-Group(sl):	Omre¾ni/Pripomoèki
-Group(sv):	Nätverk/Verktyg
-Group(uk):	íÅÒÅÖÁ/õÔÉÌ¦ÔÉ
 Source0:	http://sms.jfiok.org/pub/%{name}.tar.gz
 URL:		http://sms.jfiok.org/
 Requires:	textutils
@@ -43,21 +28,6 @@ wysy³ania komunikatów SMS, przekazywania poczty na SMS, etc.
 Summary:	A script helpful to create a WWW->SMS gate
 Summary(pl):	Skrypt u¿yteczny do stworzenia bramki WWW->SMS
 Group:		Networking/Utilities
-Group(cs):	Sí»ové/Utility
-Group(da):	Netværks/Værktøj
-Group(de):	Netzwerkwesen/Dienstprogramme
-Group(es):	Red/Utilitarios
-Group(fr):	Réseau/Utilitaires
-Group(is):	Net/Tól
-Group(it):	Rete/Utility
-Group(no):	Nettverks/Verktøy
-Group(pl):	Sieciowe/Narzêdzia
-Group(pt_BR):	Rede/Utilitários
-Group(pt):	Rede/Utilidades
-Group(ru):	óÅÔØ/õÔÉÌÉÔÙ
-Group(sl):	Omre¾ni/Pripomoèki
-Group(sv):	Nätverk/Verktyg
-Group(uk):	íÅÒÅÖÁ/õÔÉÌ¦ÔÉ
 Requires:	%{name} = %{version}
 Requires:	metamail
 
@@ -73,21 +43,6 @@ potrzebowa³ takow± stworzyæ.
 Summary:	A console interface for sending SMSes
 Summary(pl):	Konsolowy interfejs do wysy³ania SMSów
 Group:		Networking/Utilities
-Group(cs):	Sí»ové/Utility
-Group(da):	Netværks/Værktøj
-Group(de):	Netzwerkwesen/Dienstprogramme
-Group(es):	Red/Utilitarios
-Group(fr):	Réseau/Utilitaires
-Group(is):	Net/Tól
-Group(it):	Rete/Utility
-Group(no):	Nettverks/Verktøy
-Group(pl):	Sieciowe/Narzêdzia
-Group(pt_BR):	Rede/Utilitários
-Group(pt):	Rede/Utilidades
-Group(ru):	óÅÔØ/õÔÉÌÉÔÙ
-Group(sl):	Omre¾ni/Pripomoèki
-Group(sv):	Nätverk/Verktyg
-Group(uk):	íÅÒÅÖÁ/õÔÉÌ¦ÔÉ
 Requires:	%{name} = %{version}
 Requires:	dialog
 
@@ -103,21 +58,6 @@ miarê wygodnego (?) i funkcjonalnego interfejsu do wysy³ania SMSów.
 Summary:	A simple netcat replacement
 Summary(pl):	Prosty zastêpnik netcat'a
 Group:		Networking/Utilities
-Group(cs):	Sí»ové/Utility
-Group(da):	Netværks/Værktøj
-Group(de):	Netzwerkwesen/Dienstprogramme
-Group(es):	Red/Utilitarios
-Group(fr):	Réseau/Utilitaires
-Group(is):	Net/Tól
-Group(it):	Rete/Utility
-Group(no):	Nettverks/Verktøy
-Group(pl):	Sieciowe/Narzêdzia
-Group(pt_BR):	Rede/Utilitários
-Group(pt):	Rede/Utilidades
-Group(ru):	óÅÔØ/õÔÉÌÉÔÙ
-Group(sl):	Omre¾ni/Pripomoèki
-Group(sv):	Nätverk/Verktyg
-Group(uk):	íÅÒÅÖÁ/õÔÉÌ¦ÔÉ
 Provides:	nc
 Requires:	telnet
 
