@@ -6,6 +6,7 @@ Release:	3
 License:	non-commercial
 Group:		Networking/Utilities
 Source0:	http://sms.jfiok.org/pub/%{name}.tar.gz
+# Source0-md5:	76acd4a51cc5be2e42131d95d5cf23e4
 URL:		http://sms.jfiok.org/
 Requires:	textutils
 Requires:	wget
