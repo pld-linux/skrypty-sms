@@ -2,7 +2,7 @@ Summary:	A set of scripts to send SMSes
 Summary(pl):	Zestaw skryptów do wysy³ania SMSów
 Name:		skrypty-sms
 Version:	1.62
-Release:	2
+Release:	3
 License:	non-commercial
 Group:		Networking/Utilities
 Source0:	http://sms.jfiok.org/pub/%{name}.tar.gz
@@ -36,8 +36,8 @@ This script is meant as a backend for a WWW->SMS gate, should you need
 to create such yourself.
 
 %description bramka-www -l pl
-Ten skrypt jest backendem dla bramki WWW->SMS, w razie, gdyby¶
-potrzebowa³ takow± stworzyæ.
+Ten skrypt jest backendem dla bramki WWW->SMS, na wypadek potrzeby
+stworzenia takowej.
 
 %package dialog
 Summary:	A console interface for sending SMSes
@@ -56,7 +56,7 @@ miarê wygodnego (?) i funkcjonalnego interfejsu do wysy³ania SMSów.
 
 %package nc
 Summary:	A simple netcat replacement
-Summary(pl):	Prosty zastêpnik netcat'a
+Summary(pl):	Prosty zastêpnik netcata
 Group:		Networking/Utilities
 Provides:	nc
 Requires:	telnet
