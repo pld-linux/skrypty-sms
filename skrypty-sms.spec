@@ -8,13 +8,13 @@ Group:		Networking/Utilities
 Source0:	http://sms.jfiok.org/pub/%{name}.tar.gz
 # Source0-md5:	76acd4a51cc5be2e42131d95d5cf23e4
 URL:		http://sms.jfiok.org/
+BuildRequires:	perl-base
 Requires:	textutils
 Requires:	wget
 Requires:	grep
 Requires:	nc
 Requires:	sed
 Requires:	smtpdaemon
-BuildRequires:	perl
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -98,8 +98,8 @@ literki nam nie przeszkadzaj±, to mo¿na to wy³±czyæ.
 
 %prep
 %setup -qn %{name}
-perl -p -i -e 's#/usr/local#%{_prefix}#g' *
-perl -p -i -e 's/CURRENT=.*/CURRENT=%{version}/' check-for-update.sh
+%{__perl} -p -i -e 's#/usr/local#%{_prefix}#g' *
+%{__perl} -p -i -e 's/CURRENT=.*/CURRENT=%{version}/' check-for-update.sh
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -115,7 +115,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README* CHANGELOG *.html
-%config %{_sysconfdir}/*
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/*
 %attr(755,root,root) %{_bindir}/skrypty*
 %attr(755,root,root) %{_bindir}/bramka-mail
 %attr(755,root,root) %{_bindir}/powiadom
