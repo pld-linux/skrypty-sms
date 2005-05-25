@@ -1,12 +1,12 @@
 Summary:	A set of scripts to send SMSes
 Summary(pl):	Zestaw skryptów do wysy³ania SMSów
 Name:		skrypty-sms
-Version:	1.62
-Release:	4
+Version:	1.85
+Release:	0.1
 License:	non-commercial
 Group:		Networking/Utilities
-Source0:	http://sms.jfiok.org/pub/%{name}.tar.gz
-# Source0-md5:	76acd4a51cc5be2e42131d95d5cf23e4
+Source0:	http://sms.jfiok.org/pub/%{name}-%{version}.tar.gz
+# Source0-md5:	2c64d36a12d94ecac1cd107880902d51
 URL:		http://sms.jfiok.org/
 BuildRequires:	perl-base
 Requires:	textutils
@@ -106,7 +106,8 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/sms,%{_sysconfdir}}
 install nopl bramka-common sms.* $RPM_BUILD_ROOT%{_datadir}/sms
 install check-for-update.sh $RPM_BUILD_ROOT%{_bindir}/skrypty-sms-check-for-update
-install sms-dialog nc bramka-{mail,www} powiadom $RPM_BUILD_ROOT%{_bindir}
+install sms-dialog extras/bramka-{mail,www} powiadom $RPM_BUILD_ROOT%{_bindir}
+install nc-emulator $RPM_BUILD_ROOT%{_bindir}/nc
 install smsrc $RPM_BUILD_ROOT%{_sysconfdir}
 
 %clean
@@ -114,7 +115,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README* CHANGELOG *.html
+%doc README* CHANGELOG
 %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/*
 %attr(755,root,root) %{_bindir}/skrypty*
 %attr(755,root,root) %{_bindir}/bramka-mail
