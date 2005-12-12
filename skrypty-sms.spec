@@ -121,7 +121,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/bramka-mail
 %attr(755,root,root) %{_bindir}/powiadom
 %dir %{_datadir}/sms
-%{_datadir}/sms/bramka-common
+%attr(755,root,root) %{_datadir}/sms/bramka-common
 %{_datadir}/sms/sms*
 
 %files bramka-www
