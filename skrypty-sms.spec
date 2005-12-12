@@ -2,7 +2,7 @@ Summary:	A set of scripts to send SMSes
 Summary(pl):	Zestaw skryptów do wysy³ania SMSów
 Name:		skrypty-sms
 Version:	1.86
-Release:	0.1
+Release:	1
 License:	non-commercial
 Group:		Networking/Utilities
 Source0:	http://sms.jfiok.org/pub/%{name}-%{version}.tar.gz
