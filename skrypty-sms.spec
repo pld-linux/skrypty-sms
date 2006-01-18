@@ -9,6 +9,7 @@ Source0:	http://sms.jfiok.org/pub/%{name}-%{version}.tar.gz
 # Source0-md5:	27a5a8a5068fd43ef4bbea0adc5304da
 URL:		http://sms.jfiok.org/
 BuildRequires:	perl-base
+Requires:       perl-Crypt-SSLeay
 Requires:	grep
 Requires:	nc
 Requires:	sed
