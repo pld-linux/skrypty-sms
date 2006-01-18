@@ -1,5 +1,5 @@
 Summary:	A set of scripts to send SMSes
-Summary(pl):	Zestaw skryptów do wysy³ania SMSów
+Summary(pl):	Zestaw skryptów do wysy³ania SMS-ów
 Name:		skrypty-sms
 Version:	1.86
 Release:	2
@@ -9,7 +9,7 @@ Source0:	http://sms.jfiok.org/pub/%{name}-%{version}.tar.gz
 # Source0-md5:	27a5a8a5068fd43ef4bbea0adc5304da
 URL:		http://sms.jfiok.org/
 BuildRequires:	perl-base
-Requires:       perl-Crypt-SSLeay
+Requires:	perl-Crypt-SSLeay
 Requires:	grep
 Requires:	nc
 Requires:	sed
@@ -23,8 +23,8 @@ This package contains a set of shell scripts that can be used for
 sending SMS messages, forwarding mails to SMS, etc.
 
 %description -l pl
-Ten pakiet zawiera zestaw skryptów pow³oki, które mog± byæ u¿yte do
-wysy³ania komunikatów SMS, przekazywania poczty na SMS, etc.
+Ten pakiet zawiera zestaw skryptów pow³oki, które mog± s³u¿yæ do
+wysy³ania komunikatów SMS, przekazywania poczty na SMS itp.
 
 %package bramka-www
 Summary:	A script helpful to create a WWW->SMS gate
@@ -43,7 +43,7 @@ stworzenia takowej.
 
 %package dialog
 Summary:	A console interface for sending SMSes
-Summary(pl):	Konsolowy interfejs do wysy³ania SMSów
+Summary(pl):	Konsolowy interfejs do wysy³ania SMS-ów
 Group:		Networking/Utilities
 Requires:	%{name} = %{version}
 Requires:	dialog
@@ -54,7 +54,7 @@ convenient (?) and functional interface for sending SMS messages.
 
 %description dialog -l pl
 Skrypt "sms-dialog" wykorzystuje polecenie "dialog" do stworzenia w
-miarê wygodnego (?) i funkcjonalnego interfejsu do wysy³ania SMSów.
+miarê wygodnego (?) i funkcjonalnego interfejsu do wysy³ania SMS-ów.
 
 %package nc
 Summary:	A simple netcat replacement
@@ -64,14 +64,14 @@ Provides:	nc
 Requires:	telnet
 
 %description nc
-This quite simple script replaces the netcat program -- its only
+This quite simple script replaces the netcat program - its only
 function is sending a given character stream (received from the
 standard input) to a remote server with a given name and reading the
 response sending it to the standard output.
 
 %description nc -l pl
 Ten w sumie prosty skrypt zastêpuje program znany pod nazw± netcat
-(nc) -- jego jedyn± funkcj± jest wysy³anie danego ci±gu znaków
+(nc) - jego jedyn± funkcj± jest wysy³anie podanego ci±gu znaków
 (otrzymanego na standardowym wej¶ciu) do zdalnego serwera o podanej
 nazwie, oraz odczytanie odpowiedzi i przekazanie je na standardowe
 wyj¶cie.
@@ -85,16 +85,16 @@ Group:		Networking/Utilities
 
 %description nopl
 The "nopl" script decodes fragments of mail headers encoded in
-Quoted-Printable or Base64. This means e.g. converting
+Quoted-Printable or Base64. This means eg. converting
 =?ISO-8859-1?Q?=E4u=DFer?= to "äußer". Additionally the script can
-convert Polish characters into ASCII character (ó->o etc.) However, if
-we aren't bothered by Polish letters it can be turned off.
+convert Polish characters into ASCII characters (ó->o etc.) However,
+if we aren't bothered by Polish letters it can be turned off.
 
 %description nopl -l pl
 Skrypt "nopl" odkodowuje wystêpuj±ce w nag³ówkach listu fragmenty
-kodowane jako Quoted-Printable albo Base64 . Oznacza to np. zamianê
+kodowane jako Quoted-Printable albo Base64. Oznacza to np. zamianê
 =?ISO-8859-2?Q?pi=EA=E6?= na "piêæ". Dodatkowo skrypt mo¿e zamieniaæ
-polskie znaki na znaki ascii (±->a itp.), aczkolwiek je¿eli polskie
+polskie znaki na znaki ASCII (±->a itp.), aczkolwiek je¿eli polskie
 literki nam nie przeszkadzaj±, to mo¿na to wy³±czyæ.
 
 %prep
