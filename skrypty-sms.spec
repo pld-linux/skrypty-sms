@@ -127,6 +127,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files bramka-www
 %defattr(644,root,root,755)
+%doc extras/przyklad-bramki.html
 %attr(755,root,root) %{_bindir}/bramka-www
 
 %files dialog
