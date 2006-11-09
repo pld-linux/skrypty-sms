@@ -9,9 +9,9 @@ Source0:	http://sms.jfiok.org/pub/%{name}-%{version}.tar.gz
 # Source0-md5:	27a5a8a5068fd43ef4bbea0adc5304da
 URL:		http://sms.jfiok.org/
 BuildRequires:	perl-base
-Requires:	perl-Crypt-SSLeay
 Requires:	grep
 Requires:	nc
+Requires:	perl-Crypt-SSLeay
 Requires:	perl-libwww
 Requires:	sed
 Requires:	smtpdaemon
@@ -31,7 +31,7 @@ wysy³ania komunikatów SMS, przekazywania poczty na SMS itp.
 Summary:	A script helpful to create a WWW->SMS gate
 Summary(pl):	Skrypt u¿yteczny do stworzenia bramki WWW->SMS
 Group:		Networking/Utilities
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 Requires:	metamail
 
 %description bramka-www
@@ -46,7 +46,7 @@ stworzenia takowej.
 Summary:	A console interface for sending SMSes
 Summary(pl):	Konsolowy interfejs do wysy³ania SMS-ów
 Group:		Networking/Utilities
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 Requires:	dialog
 
 %description dialog
@@ -61,8 +61,8 @@ miarê wygodnego (?) i funkcjonalnego interfejsu do wysy³ania SMS-ów.
 Summary:	A simple netcat replacement
 Summary(pl):	Prosty zastêpnik netcata
 Group:		Networking/Utilities
-Provides:	nc
 Requires:	telnet
+Provides:	nc
 
 %description nc
 This quite simple script replaces the netcat program - its only
@@ -80,9 +80,9 @@ wyj¶cie.
 %package nopl
 Summary:	A MIME decoder & Polish character remover for skrypty-sms
 Summary(pl):	Dekoder MIME i usuwaczka polskich znaków dla skrypty-sms
-Requires:	%{name} = %{version}
-Requires:	metamail
 Group:		Networking/Utilities
+Requires:	%{name} = %{version}-%{release}
+Requires:	metamail
 
 %description nopl
 The "nopl" script decodes fragments of mail headers encoded in
