@@ -1,5 +1,5 @@
 Summary:	A set of scripts to send SMSes
-Summary(pl):	Zestaw skryptów do wysy³ania SMS-ów
+Summary(pl.UTF-8):   Zestaw skryptÃ³w do wysyÅ‚ania SMS-Ã³w
 Name:		skrypty-sms
 Version:	1.86
 Release:	3
@@ -23,13 +23,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This package contains a set of shell scripts that can be used for
 sending SMS messages, forwarding mails to SMS, etc.
 
-%description -l pl
-Ten pakiet zawiera zestaw skryptów pow³oki, które mog± s³u¿yæ do
-wysy³ania komunikatów SMS, przekazywania poczty na SMS itp.
+%description -l pl.UTF-8
+Ten pakiet zawiera zestaw skryptÃ³w powÅ‚oki, ktÃ³re mogÄ… sÅ‚uÅ¼yÄ‡ do
+wysyÅ‚ania komunikatÃ³w SMS, przekazywania poczty na SMS itp.
 
 %package bramka-www
 Summary:	A script helpful to create a WWW->SMS gate
-Summary(pl):	Skrypt u¿yteczny do stworzenia bramki WWW->SMS
+Summary(pl.UTF-8):   Skrypt uÅ¼yteczny do stworzenia bramki WWW->SMS
 Group:		Networking/Utilities
 Requires:	%{name} = %{version}-%{release}
 Requires:	metamail
@@ -38,13 +38,13 @@ Requires:	metamail
 This script is meant as a backend for a WWW->SMS gate, should you need
 to create such yourself.
 
-%description bramka-www -l pl
+%description bramka-www -l pl.UTF-8
 Ten skrypt jest backendem dla bramki WWW->SMS, na wypadek potrzeby
 stworzenia takowej.
 
 %package dialog
 Summary:	A console interface for sending SMSes
-Summary(pl):	Konsolowy interfejs do wysy³ania SMS-ów
+Summary(pl.UTF-8):   Konsolowy interfejs do wysyÅ‚ania SMS-Ã³w
 Group:		Networking/Utilities
 Requires:	%{name} = %{version}-%{release}
 Requires:	dialog
@@ -53,13 +53,13 @@ Requires:	dialog
 The "sms-dialog" script uses the "dialog" command to create quite a
 convenient (?) and functional interface for sending SMS messages.
 
-%description dialog -l pl
+%description dialog -l pl.UTF-8
 Skrypt "sms-dialog" wykorzystuje polecenie "dialog" do stworzenia w
-miarê wygodnego (?) i funkcjonalnego interfejsu do wysy³ania SMS-ów.
+miarÄ™ wygodnego (?) i funkcjonalnego interfejsu do wysyÅ‚ania SMS-Ã³w.
 
 %package nc
 Summary:	A simple netcat replacement
-Summary(pl):	Prosty zastêpnik netcata
+Summary(pl.UTF-8):   Prosty zastÄ™pnik netcata
 Group:		Networking/Utilities
 Requires:	telnet
 Provides:	nc
@@ -70,16 +70,16 @@ function is sending a given character stream (received from the
 standard input) to a remote server with a given name and reading the
 response sending it to the standard output.
 
-%description nc -l pl
-Ten w sumie prosty skrypt zastêpuje program znany pod nazw± netcat
-(nc) - jego jedyn± funkcj± jest wysy³anie podanego ci±gu znaków
-(otrzymanego na standardowym wej¶ciu) do zdalnego serwera o podanej
+%description nc -l pl.UTF-8
+Ten w sumie prosty skrypt zastÄ™puje program znany pod nazwÄ… netcat
+(nc) - jego jedynÄ… funkcjÄ… jest wysyÅ‚anie podanego ciÄ…gu znakÃ³w
+(otrzymanego na standardowym wejÅ›ciu) do zdalnego serwera o podanej
 nazwie, oraz odczytanie odpowiedzi i przekazanie je na standardowe
-wyj¶cie.
+wyjÅ›cie.
 
 %package nopl
 Summary:	A MIME decoder & Polish character remover for skrypty-sms
-Summary(pl):	Dekoder MIME i usuwaczka polskich znaków dla skrypty-sms
+Summary(pl.UTF-8):   Dekoder MIME i usuwaczka polskich znakÃ³w dla skrypty-sms
 Group:		Networking/Utilities
 Requires:	%{name} = %{version}-%{release}
 Requires:	metamail
@@ -87,16 +87,16 @@ Requires:	metamail
 %description nopl
 The "nopl" script decodes fragments of mail headers encoded in
 Quoted-Printable or Base64. This means eg. converting
-=?ISO-8859-1?Q?=E4u=DFer?= to "äußer". Additionally the script can
-convert Polish characters into ASCII characters (ó->o etc.) However,
+=?ISO-8859-1?Q?=E4u=DFer?= to "Ã¤uÃŸer". Additionally the script can
+convert Polish characters into ASCII characters (Ã³->o etc.) However,
 if we aren't bothered by Polish letters it can be turned off.
 
-%description nopl -l pl
-Skrypt "nopl" odkodowuje wystêpuj±ce w nag³ówkach listu fragmenty
-kodowane jako Quoted-Printable albo Base64. Oznacza to np. zamianê
-=?ISO-8859-2?Q?pi=EA=E6?= na "piêæ". Dodatkowo skrypt mo¿e zamieniaæ
-polskie znaki na znaki ASCII (±->a itp.), aczkolwiek je¿eli polskie
-literki nam nie przeszkadzaj±, to mo¿na to wy³±czyæ.
+%description nopl -l pl.UTF-8
+Skrypt "nopl" odkodowuje wystÄ™pujÄ…ce w nagÅ‚Ã³wkach listu fragmenty
+kodowane jako Quoted-Printable albo Base64. Oznacza to np. zamianÄ™
+=?ISO-8859-2?Q?pi=EA=E6?= na "piÄ™Ä‡". Dodatkowo skrypt moÅ¼e zamieniaÄ‡
+polskie znaki na znaki ASCII (Ä…->a itp.), aczkolwiek jeÅ¼eli polskie
+literki nam nie przeszkadzajÄ…, to moÅ¼na to wyÅ‚Ä…czyÄ‡.
 
 %prep
 %setup -qn %{name}
