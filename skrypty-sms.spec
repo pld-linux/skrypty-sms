@@ -1,5 +1,5 @@
 Summary:	A set of scripts to send SMSes
-Summary(pl.UTF-8):   Zestaw skryptów do wysyłania SMS-ów
+Summary(pl.UTF-8):	Zestaw skryptów do wysyłania SMS-ów
 Name:		skrypty-sms
 Version:	1.86
 Release:	3
@@ -29,7 +29,7 @@ wysyłania komunikatów SMS, przekazywania poczty na SMS itp.
 
 %package bramka-www
 Summary:	A script helpful to create a WWW->SMS gate
-Summary(pl.UTF-8):   Skrypt użyteczny do stworzenia bramki WWW->SMS
+Summary(pl.UTF-8):	Skrypt użyteczny do stworzenia bramki WWW->SMS
 Group:		Networking/Utilities
 Requires:	%{name} = %{version}-%{release}
 Requires:	metamail
@@ -44,7 +44,7 @@ stworzenia takowej.
 
 %package dialog
 Summary:	A console interface for sending SMSes
-Summary(pl.UTF-8):   Konsolowy interfejs do wysyłania SMS-ów
+Summary(pl.UTF-8):	Konsolowy interfejs do wysyłania SMS-ów
 Group:		Networking/Utilities
 Requires:	%{name} = %{version}-%{release}
 Requires:	dialog
@@ -59,7 +59,7 @@ miarę wygodnego (?) i funkcjonalnego interfejsu do wysyłania SMS-ów.
 
 %package nc
 Summary:	A simple netcat replacement
-Summary(pl.UTF-8):   Prosty zastępnik netcata
+Summary(pl.UTF-8):	Prosty zastępnik netcata
 Group:		Networking/Utilities
 Requires:	telnet
 Provides:	nc
@@ -79,7 +79,7 @@ wyjście.
 
 %package nopl
 Summary:	A MIME decoder & Polish character remover for skrypty-sms
-Summary(pl.UTF-8):   Dekoder MIME i usuwaczka polskich znaków dla skrypty-sms
+Summary(pl.UTF-8):	Dekoder MIME i usuwaczka polskich znaków dla skrypty-sms
 Group:		Networking/Utilities
 Requires:	%{name} = %{version}-%{release}
 Requires:	metamail
